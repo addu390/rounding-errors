@@ -9,6 +9,8 @@
 - Install JupyterLab with pip: `pip install jupyterlab`
 - Launch JupyterLab with: `jupyter-lab`
 
+or try it out on [Binder](https://mybinder.org/): [https://mybinder.org/v2/gh/addu390/rounding-errors/master](https://mybinder.org/v2/gh/addu390/rounding-errors/master)
+
 # The Computational Geometry Algorithms Library ([CGAL](https://www.cgal.org/))
 
 ## The Exact Computation Paradigm
