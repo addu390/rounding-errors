@@ -1,0 +1,7 @@
+.ipynb_checkpoints
+.idea/
+*/CMakeFiles
+*MakeCache.txt
+*/Makefile
+*.cmake
+*/mp_float
