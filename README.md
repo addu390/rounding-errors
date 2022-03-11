@@ -14,6 +14,8 @@
 - Try it out on [Binder](https://mybinder.org/): [https://mybinder.org/v2/gh/addu390/rounding-errors/master](https://mybinder.org/v2/gh/addu390/rounding-errors/master)
 - Use Timberlea: [https://timberlea.cs.dal.ca:8000/](https://timberlea.cs.dal.ca:8000/)
 
+---
+
 # Robustness Problems in Planar Convex Hull Computation (Part 2)
 
 - Command line tools and input data for demonstrating two failures of a floating-point based implementation of an algorithm for computing the convex hull of a set of points in the plane. 
@@ -44,6 +46,8 @@ Reading output of `diff` command: [Using Diff Command to Compare Two Files in Li
 Explanation: [1] and [2]
 
 Note: The original `README.md` for Part 2 can be found inside `convex-hull` directory.
+
+---
 
 # The Exact Computation Paradigm
 
