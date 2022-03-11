@@ -48,5 +48,6 @@ Note: The original `README.md` for Part 2 can be found inside `convex-hull` dire
 # References
 
 > [1] “Robustness Problems in Convex Hull Computation,” wwwisg.cs.uni-magdeburg.de. http://wwwisg.cs.uni-magdeburg.de/ag/ClassroomExample/#Kettner2008 (accessed Mar. 11, 2022).
+
 > [2] L. Kettner, K. Mehlhorn, S. Pion, S. Schirra, and C. Yap, “Classroom examples of robustness problems in geometric computations,” Computational Geometry, vol. 40, no. 1, pp. 61–78, May 2008, doi: 10.1016/j.comgeo.2007.06.003.
 ‌
