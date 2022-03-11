@@ -6,3 +6,4 @@
 *.cmake
 */mp_float
 */build
+*/.DS_Store
