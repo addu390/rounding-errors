@@ -1,6 +1,7 @@
 from fractions import Fraction
 from math import frexp, fsum
 from decimal import getcontext, Decimal, Inexact
+import timeit
 
 getcontext().traps[Inexact] = True
 
@@ -70,3 +71,25 @@ def dsum(iterable):
 
 def frsum(iterable):
     return float(sum(map(Fraction.from_float, iterable)))
+
+
+def generate_nilakantha_terms(num_terms):
+    yield 3
+    denominator = 1
+    sign = 1
+    for i in range(1, num_terms):
+        denominator = (2 * i) * ((2 * i) + 1) * ((2 * i) + 2)
+        yield sign * (4 / denominator)
+        sign = -sign
+
+
+if __name__ == "__main__":
+    input = 262144
+
+    print("error: ", timeit.timeit(lambda: error(generate_nilakantha_terms(input)), number=10))
+    print("ksum: ", timeit.timeit(lambda: ksum(generate_nilakantha_terms(input)), number=10))
+    print("msum: ", timeit.timeit(lambda: msum(generate_nilakantha_terms(input)), number=10))
+    print("lsum: ", timeit.timeit(lambda: lsum(generate_nilakantha_terms(input)), number=10))
+    print("dsum: ", timeit.timeit(lambda: dsum(generate_nilakantha_terms(input)), number=10))
+    print("frsum: ", timeit.timeit(lambda: frsum(generate_nilakantha_terms(input)), number=10))
+    print("fsum: ", timeit.timeit(lambda: fsum(generate_nilakantha_terms(input)), number=10))
