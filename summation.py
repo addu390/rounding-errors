@@ -85,11 +85,25 @@ def generate_nilakantha_terms(num_terms):
 
 if __name__ == "__main__":
     input = 262144
+    print_format = '{} Time: {} | Value: {}'
 
-    print("error: ", timeit.timeit(lambda: error(generate_nilakantha_terms(input)), number=10))
-    print("ksum: ", timeit.timeit(lambda: ksum(generate_nilakantha_terms(input)), number=10))
-    print("msum: ", timeit.timeit(lambda: msum(generate_nilakantha_terms(input)), number=10))
-    print("lsum: ", timeit.timeit(lambda: lsum(generate_nilakantha_terms(input)), number=10))
-    print("dsum: ", timeit.timeit(lambda: dsum(generate_nilakantha_terms(input)), number=10))
-    print("frsum: ", timeit.timeit(lambda: frsum(generate_nilakantha_terms(input)), number=10))
-    print("fsum: ", timeit.timeit(lambda: fsum(generate_nilakantha_terms(input)), number=10))
+    print(print_format.format('error sum: ', timeit.timeit(lambda: error(generate_nilakantha_terms(input)), number=10),
+                              error(generate_nilakantha_terms(input))))
+
+    print(print_format.format('ksum: ', timeit.timeit(lambda: ksum(generate_nilakantha_terms(input)), number=10),
+                              ksum(generate_nilakantha_terms(input))))
+
+    print(print_format.format('msum: ', timeit.timeit(lambda: msum(generate_nilakantha_terms(input)), number=10),
+                              msum(generate_nilakantha_terms(input))))
+
+    print(print_format.format('lsum: ', timeit.timeit(lambda: lsum(generate_nilakantha_terms(input)), number=10),
+                              lsum(generate_nilakantha_terms(input))))
+
+    print(print_format.format('dsum: ', timeit.timeit(lambda: dsum(generate_nilakantha_terms(input)), number=10),
+                              dsum(generate_nilakantha_terms(input))))
+
+    print(print_format.format('frsum: ', timeit.timeit(lambda: frsum(generate_nilakantha_terms(input)), number=10),
+                              frsum(generate_nilakantha_terms(input))))
+
+    print(print_format.format('fsum: ', timeit.timeit(lambda: fsum(generate_nilakantha_terms(input)), number=10),
+                              fsum(generate_nilakantha_terms(input))))
