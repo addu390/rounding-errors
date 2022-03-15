@@ -45,8 +45,6 @@ Reading output of `diff` command: [Using Diff Command to Compare Two Files in Li
 
 Explanation: [1] and [2]
 
-Note: The original `README.md` for Part 2 can be found inside `convex-hull` directory.
-
 ---
 
 # The Exact Computation Paradigm
@@ -64,7 +62,6 @@ Note: The original `README.md` for Part 2 can be found inside `convex-hull` dire
 
 - Download the [CGAL examples](https://github.com/CGAL/cgal/releases/download/v5.4/CGAL-5.4-examples.tar.xz").
 
-- 
 ```
 cd CGAL-5.4/examples/<example-problem>
 cmake -DCMAKE_BUILD_TYPE=Release .
